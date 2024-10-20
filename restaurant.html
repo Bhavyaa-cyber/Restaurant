@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow & Flame</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center items vertically */
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61; /* Hover color for links */
+        }
+
+        /* Logo Styling */
+        .logo img {
+            width: 50px; /* Adjust width as necessary */
+            height: 60px; /* Maintain aspect ratio */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('rest.jpg'); /* Image from the local folder */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #ff8a80;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            color: #ff6f61;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .menu-item p {
+            color: #bdbdbd;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #bdbdbd;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="Black Red Minimalist Business Logo.jpg" alt="Shadow & Flame Logo"> <!-- Adjust the filename as needed -->
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="about.html">About Us</a> <!-- Updated link to point to about.html -->
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Shadow & Flame</h1>
+        <p>Exquisite dining experience in a dark aesthetic atmosphere</p>
+        <button onclick="window.location.href='reserve.html'">Reserve a Table</button> <!-- Modified button -->
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section" id="menu">
+        <h2>Our Specialties</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="cheese.jpg" alt="Dish Name">
+                <h3>Whispers of Cheese</h3>
+                <p>Golden, crispy bites bursting with melted cheese and aromatic herbs. These indulgent morsels offer a delightful crunch, served with a zesty dip—perfect for sharing in the shadows of flavor.</p>
+            </div>
+            <div class="menu-item">
+                <img src="rav.jpg" alt="Dish Name">
+                <h3>Golden Melt Ravioli</h3>
+                <p>Pillowy ravioli stuffed with a creamy blend of ricotta and parmesan, draped in a rich, velvety cheese sauce. Indulgent, comforting, and utterly irresistible.</p>
+            </div>
+            <div class="menu-item">
+                <img src="chocolate.jpg" alt="Dish Name">
+                <h3>Cocoa Bliss Bombs</h3>
+                <p>Decadent layers of moist chocolate sponge enveloped in rich, velvety ganache. Each bite is a blissful escape into chocolatey heaven, perfect for satisfying your sweet cravings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shadow & Flame | Designed with ♥ by Bhavyaa</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table - Shadow & Flame</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 60px;
+        }
+
+        .reservation-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .reservation-section h2 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .reservation-form {
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            width: 300px;
+        }
+
+        .reservation-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #bdbdbd;
+        }
+
+        .reservation-form input, .reservation-form select, .reservation-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .reservation-form button {
+            background-color: #ff6f61;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .reservation-form button:hover {
+            background-color: #ff8a80;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="Black Red Minimalist Business Logo.jpg" alt="Shadow & Flame Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Reservation Form Section -->
+    <section class="reservation-section">
+        <h2>Reserve a Table</h2>
+        <form class="reservation-form" action="confirmation.html" method="GET">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+            </select>
+
+            <label for="seats">Number of Seats:</label>
+            <select id="seats" name="seats" required>
+                <option value="1">1 Seat</option>
+                <option value="2">2 Seats</option>
+                <option value="3">3 Seats</option>
+                <option value="4">4 Seats</option>
+                <option value="5">5 Seats</option>
+                <option value="6">6 Seats</option>
+            </select>
+
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </section>
+
+</body>
+</html>
